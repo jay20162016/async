@@ -3,10 +3,8 @@ Asynchronous Circuits!!!!!!!!!!!!!!
 
 
 In this repo is my progress on asynchronous circuits. They use the 4-phase bundled data protocol.  
-  
-  
-  
 
+Following is a description of each:
 
 lut - Lookup table. Edit the `SB_LUT4` part to your fpga's lut primative.  
 loop_breaker - Blackbox module to make sure yosys doesn't break combinatorical loops.  
