@@ -1,0 +1,29 @@
+√ = Verified
+/ = Mostly Verified/Should be trivial/Expected to Pass verification
+| = Working in Progress/Bug Found
+\ = Next Up
+
+[√] fomu
+
+[√] lut
+
+[√] delay_multi
+[√] delay_one
+[√] delay
+
+[√] dlatch
+[√] mullerc
+
+[√] sink
+[√] source
+
+[√] hlatch
+
+[√] combine
+[√] split
+
+[√] merge
+[√] merge2
+
+[√] mux
+[√] mux2
