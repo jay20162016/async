@@ -3,9 +3,9 @@ Asynchronous Circuits!!!!!!!!!!!!!!
 
 
 In this repo is my progress on asynchronous circuits. They use the 4-phase bundled data protocol.  
-
-
-
+  
+  
+  
 
 
 lut - Lookup table. Edit the `SB_LUT4` part to your fpga's lut primative.  
