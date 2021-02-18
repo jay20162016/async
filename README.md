@@ -2,39 +2,32 @@
 Asynchronous Circuits!!!!!!!!!!!!!!
 
 
-In this repo is my progress on asynchronous circuits. They use the 4-phase bundled data protocol.
+In this repo is my progress on asynchronous circuits. They use the 4-phase bundled data protocol.  
 
-lut - Lookup table. Edit the `SB_LUT4` part to your fpga's lut primative.
+lut - Lookup table. Edit the `SB_LUT4` part to your fpga's lut primative.  
+loop_breaker - Blackbox module to make sure yosys doesn't break combinatorical loops.  
 
-loop_breaker - Blackbox module to make sure yosys doesn't break combinatorical loops.
+delay_multi - Delays. Used to ensure request comes after data validity.  
+delay_one.  
+delay.  
 
-delay_multi - Delays. Used to ensure request comes after data validity.
+dlatch - D latch. Propangate data on enable.  
 
-delay_one
+mullerc - Muller C element. Propangate inputs when they're the same, otherwise hold data.  
 
-delay
+source - Keeps on handshaking.  
+sink - Keeps on acknowledging.  
 
-dlatch - D latch. Propangate data on enable.
+hlatch - Handshaking latch.  
 
-mullerc - Muller C element. Propangate inputs when they're the same, otherwise hold data.
+combine - Combines/Joins handshakes, AND-wise.  
+split - Splits/Forks handshakes.  
 
-source - Keeps on handshaking.
+merge - Merges handshakes, OR-wise.  
+merge2 - Same as merge, but acknowledge is only sent to the handshaker.  
 
-sink - Keeps on acknowledging
+mux - Multiplexes, control is dual-rail.  
+mux2 - Multiplexes, control is bundled-data.  
 
-hlatch - Handshaking latch.
-
-combine - Combines/Joins handshakes, AND-wise.
-
-split - Splits/Forks handshakes.
-
-merge - Merges handshakes, OR-wise.
-
-merge2 - Same as merge, but acknowledge is only sent to the handshaker.
-
-mux - Multiplexes, control is dual-rail.
-
-mux2 - Multiplexes, control is bundled-data.
-
-demux - Demultiplexer, ***not implemented yet***.
+demux - Demultiplexer, ***not implemented yet***.  
 
