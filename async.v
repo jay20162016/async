@@ -15,3 +15,6 @@
 
 `include "mux.v"
 `include "mux2.v"
+
+`include "demux.v"
+`include "demux2.v"

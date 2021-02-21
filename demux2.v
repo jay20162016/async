@@ -1,6 +1,6 @@
 `ifndef __demux2
 
-`include "demux2.v"
+`include "demux.v"
 
 module demux2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

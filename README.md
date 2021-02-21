@@ -31,5 +31,5 @@ merge2 - Same as merge, but acknowledge is only sent to the handshaker.
 mux - Multiplexes, control is dual-rail.  
 mux2 - Multiplexes, control is bundled-data.  
 
-demux - Demultiplexer, ***not implemented yet***.  
-
+demux - Demultiplexer, control is dual-rail.  
+deumx2 - Demultiplexer, control is bundled-data.   
