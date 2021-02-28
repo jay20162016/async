@@ -32,4 +32,7 @@ mux - Multiplexes, control is dual-rail.
 mux2 - Multiplexes, control is bundled-data.  
 
 demux - Demultiplexer, control is dual-rail.  
-deumx2 - Demultiplexer, control is bundled-data.   
+demux2 - Demultiplexer, control is bundled-data.   
+
+cond_sink - Conditional Sink, control is dual-rail.
+cond_sink2 - Conditional Sink, control is bundled-data.
