@@ -18,3 +18,6 @@
 
 `include "demux.v"
 `include "demux2.v"
+
+`include "cond_sink.v"
+`include "cond_sink2.v"
