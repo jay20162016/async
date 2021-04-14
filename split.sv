@@ -1,6 +1,6 @@
 `ifndef __split
 
-`include "mullerc.v"
+`include "mullerc.sv"
 
 module split #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

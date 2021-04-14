@@ -1,7 +1,7 @@
 `ifndef __cond_sink
 
-`include "demux.v"
-`include "sink.v"
+`include "demux.sv"
+`include "sink.sv"
 
 module cond_sink #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

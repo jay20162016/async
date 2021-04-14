@@ -1,6 +1,6 @@
 `ifndef __delay_one
 
-`include "lut.v"
+`include "lut.sv"
 
 module delay_one #(
     parameter Rval = 1'b0, // reset value

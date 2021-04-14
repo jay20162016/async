@@ -1,7 +1,7 @@
 `ifndef __mux
 
-`include "merge2.v"
-`include "mullerc.v"
+`include "merge2.sv"
+`include "mullerc.sv"
 
 module mux #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

@@ -1,6 +1,6 @@
 `ifndef __delay_multi
 
-`include "delay.v"
+`include "delay.sv"
 
 module delay_multi #(
     parameter T = 32'b1,

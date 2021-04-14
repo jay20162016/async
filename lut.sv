@@ -1,6 +1,6 @@
 `ifndef __lut
 
-`include "loop_breaker.v"
+`include "loop_breaker.sv"
 
 `define IA 16'b1111_1111_0000_0000
 `define IB 16'b1111_0000_1111_0000

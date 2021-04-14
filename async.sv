@@ -1,26 +1,26 @@
-`include "delay_one.v"
-`include "delay.v"
-`include "delay_multi.v"
+`include "delay_one.sv"
+`include "delay.sv"
+`include "delay_multi.sv"
 
-`include "hlatch.v"
+`include "hlatch.sv"
 
-`include "source.v"
-`include "sink.v"
+`include "source.sv"
+`include "sink.sv"
 
-`include "split.v"
-`include "combine.v"
+`include "split.sv"
+`include "combine.sv"
 
-`include "merge.v"
-`include "merge2.v"
+`include "merge.sv"
+`include "merge2.sv"
 
-`include "mux.v"
-`include "mux2.v"
+`include "mux.sv"
+`include "mux2.sv"
 
-`include "demux.v"
-`include "demux2.v"
+`include "demux.sv"
+`include "demux2.sv"
 
-`include "cond_sink.v"
-`include "cond_sink2.v"
+`include "cond_sink.sv"
+`include "cond_sink2.sv"
 
-`include "mutex.v"
-`include "arbiter.v"
+`include "mutex.sv"
+`include "arbiter.sv"

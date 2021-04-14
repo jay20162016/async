@@ -1,6 +1,6 @@
 `ifndef __mullerc
 
-`include "lut.v"
+`include "lut.sv"
 
 module mullerc #(
     parameter Rval = 1'b0, // reset value

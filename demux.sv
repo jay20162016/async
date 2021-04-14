@@ -1,6 +1,6 @@
 `ifndef __demux
 
-`include "mullerc.v"
+`include "mullerc.sv"
 
 module demux #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

@@ -1,6 +1,6 @@
 `ifndef __cond_sink2
 
-`include "cond_sink.v"
+`include "cond_sink.sv"
 
 module cond_sink2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

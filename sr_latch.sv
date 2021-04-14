@@ -1,6 +1,6 @@
 `ifndef __sr_latch
 
-`include "lut.v"
+`include "lut.sv"
 
 module sr_latch #(
     parameter Rval = 1'b0, // reset value

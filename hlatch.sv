@@ -1,7 +1,7 @@
 `ifndef __hlatch
 
-`include "mullerc.v"
-`include "dlatch.v"
+`include "mullerc.sv"
+`include "dlatch.sv"
 
 module hlatch #(
     parameter RdataVal = 1'b0, // reset value (data)

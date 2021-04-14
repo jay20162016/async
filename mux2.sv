@@ -1,6 +1,6 @@
 `ifndef __mux2
 
-`include "mux.v"
+`include "mux.sv"
 
 module mux2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

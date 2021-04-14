@@ -1,6 +1,6 @@
 `ifndef __delay
 
-`include "delay_one.v"
+`include "delay_one.sv"
 
 module delay #(
     parameter T = 32'b1,

@@ -1,7 +1,7 @@
 `ifndef __merge2
 
-`include "merge.v"
-`include "mullerc.v"
+`include "merge.sv"
+`include "mullerc.sv"
 
 module merge2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

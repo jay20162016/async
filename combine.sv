@@ -1,6 +1,6 @@
 `ifndef __combine
 
-`include "mullerc.v"
+`include "mullerc.sv"
 
 module combine #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

@@ -1,6 +1,6 @@
 `ifndef __dlatch
 
-`include "lut.v"
+`include "lut.sv"
 
 module dlatch #(
     parameter Rval = 1'b0, // reset value
