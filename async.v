@@ -21,3 +21,6 @@
 
 `include "cond_sink.v"
 `include "cond_sink2.v"
+
+`include "mutex.v"
+`include "arbiter.v"

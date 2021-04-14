@@ -25,7 +25,7 @@ hlatch - Handshaking latch.
 combine - Combines/Joins handshakes, AND-wise.  
 split - Splits/Forks handshakes.  
 
-merge - Merges handshakes, OR-wise.  
+merge - Merges handshakes (assuming mutual exclusion), OR-wise.  
 merge2 - Same as merge, but acknowledge is only sent to the handshaker.  
 
 mux - Multiplexes, control is dual-rail.  
@@ -36,3 +36,7 @@ demux2 - Demultiplexer, control is bundled-data.
 
 cond_sink - Conditional Sink, control is dual-rail.
 cond_sink2 - Conditional Sink, control is bundled-data.
+
+sr_latch - SR latch
+mutex - mutual exclusion element, first handshake is given priority
+arbiter - merges handshakes (no need for mutual exclusion), first handshake is given priority
