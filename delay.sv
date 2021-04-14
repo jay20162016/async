@@ -19,7 +19,7 @@ module delay #(
 
   genvar gen_i;
   generate
-    for (gen_i = 0; gen_i < T; gen_i++) begin
+    for (gen_i = 0; gen_i < T; gen_i = gen_i + 1) begin
       delay_one #(.Rval(Rval), .Rpol(Rpol)) main (path[gen_i], path[gen_i+1], rst);
     end
   endgenerate

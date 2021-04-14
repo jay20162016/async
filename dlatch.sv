@@ -17,7 +17,7 @@ module dlatch #(
 
   genvar gen_i;
   generate
-    for (gen_i = 0; gen_i < N; gen_i++) begin
+    for (gen_i = 0; gen_i < N; gen_i = gen_i + 1) begin
       localparam I_RST = Rpol ? `ID : ~`ID;
 
       localparam LUT_NORST = (`IB & `IC) | (~`IB & `IA);

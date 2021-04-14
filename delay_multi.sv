@@ -15,7 +15,7 @@ module delay_multi #(
 
   genvar gen_i;
   generate
-    for (gen_i = 0; gen_i < N; gen_i++) begin
+    for (gen_i = 0; gen_i < N; gen_i = gen_i + 1) begin
       delay #(.Rval(Rval), .Rpol(Rpol), .T(T)) main (i[gen_i], o[gen_i], rst);
     end
   endgenerate
