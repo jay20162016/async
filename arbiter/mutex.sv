@@ -1,6 +1,6 @@
 `ifndef __mutex
 
-`include "mullerc.sv"
+`include "../common/mullerc.sv"
 
 module mutex #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

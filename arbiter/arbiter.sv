@@ -1,7 +1,7 @@
 `ifndef __arbiter
 
 `include "mutex.sv"
-`include "merge.sv"
+`include "../flow/merge.sv"
 
 module arbiter #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

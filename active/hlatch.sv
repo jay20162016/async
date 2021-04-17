@@ -1,7 +1,8 @@
 `ifndef __hlatch
 
-`include "mullerc.sv"
+`include "../common/mullerc.sv"
 `include "dlatch.sv"
+`include "../delay/delay.sv"
 
 module hlatch #(
     parameter RdataVal = 1'b0, // reset value (data)
@@ -9,6 +10,7 @@ module hlatch #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 
     parameter N = 32'b1,
+    parameter T = 32'b0,
 
     parameter NATIVE = 1'b1 // don't optimize
   ) (
@@ -23,7 +25,8 @@ module hlatch #(
   input rst);
 
   wire waiting;
-  assign r_o = waiting;
+  wire waiting2;
+  assign r_o = waiting2;
   assign a_i = waiting;
 
   mullerc #(
@@ -42,6 +45,12 @@ module hlatch #(
     // ) latch (waiting & r_i, d_i, d_o,
     ) latch (r_i & ~a_o, d_i, d_o,
       rst);
+
+  delay #(
+    .T(T),
+    .Rval(Rval),
+    .Rpol(Rpol)
+    ) req_after_data (waiting, waiting2, rst);
 
 endmodule
 
