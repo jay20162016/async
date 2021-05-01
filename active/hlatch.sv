@@ -1,7 +1,7 @@
 `ifndef __hlatch
 
 `include "../common/mullerc.sv"
-`include "dlatch.sv"
+`include "../common/dlatch.sv"
 `include "../delay/delay.sv"
 
 module hlatch #(
@@ -42,13 +42,12 @@ module hlatch #(
     .Rpol(Rpol),
     .N(N),
     .NATIVE(NATIVE)
-    // ) latch (waiting & r_i, d_i, d_o,
     ) latch (r_i & ~a_o, d_i, d_o,
       rst);
 
   delay #(
     .T(T),
-    .Rval(Rval),
+    .Rval(RdataVal),
     .Rpol(Rpol)
     ) req_after_data (waiting, waiting2, rst);
 
