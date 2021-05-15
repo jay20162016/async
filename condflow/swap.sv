@@ -43,12 +43,7 @@ module swap #(
 
   assign a_i = a1_i_s | a1_i_s1;
 
-  // split #(.Rpol(Rpol), .NATIVE(NATIVE)) r1_split (
-  //   r_i, a_i,
-  //   r1_i_s, a1_i_s,
-  //   r1_i_s1, a1_i_s1,
-  //   rst
-  //   );
+
 
   wire r2_i_s, a2_i_s, d2_i_s;
   wire r2_i_s1, a2_i_s1, d2_i_s1;
@@ -61,12 +56,6 @@ module swap #(
 
   assign a1_i = a2_i_s | a2_i_s1;
 
-  // split #(.Rpol(Rpol), .NATIVE(NATIVE)) r2_split (
-  //   r1_i, a1_i,
-  //   r2_i_s, a2_i_s,
-  //   r2_i_s1, a2_i_s1,
-  //   rst
-  //   );
 
   wire actl_i1, actl_i2;
 
@@ -88,8 +77,6 @@ module swap #(
   mux #(.Rpol(Rpol), .N(N), .NATIVE(NATIVE)) mux2_ (
     r2_i_s1, a2_i_s1, d2_i_s1,
     r1_i_s1, a1_i_s1, d1_i_s1,
-    // r2_i_s1, a2_i_s1, d2_i_s1,
-    // ctl_b, ctl_a, actl_i2,
     ctl_a, ctl_b, actl_i2,
     r1_o, a1_o, d1_o,
     rst

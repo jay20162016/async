@@ -26,10 +26,17 @@ module lut #(
 
 
 `ifdef SYNTHESIS
+  wire ta, tb, tc, td;
   wire to;
+
+  loop_breaker breakera (a, ta);
+  loop_breaker breakerb (b, tb);
+  loop_breaker breakerc (c, tc);
+  loop_breaker breakerd (d, td);
+
   if (NATIVE) begin
     SB_LUT4 #(.LUT_INIT(LUT)) main (.O(to),
-              .I0(a), .I1(b), .I2(c), .I3(d));
+              .I0(ta), .I1(tb), .I2(tc), .I3(td));
   end
   else begin
     \$lut #(.WIDTH(4), .LUT(LUT)) main (.A({d, c, b, a}), .Y(to));
