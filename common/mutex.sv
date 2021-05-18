@@ -1,7 +1,8 @@
 `ifndef __mutex
 
-`include "../common/mullerc.sv"
+`include "mullerc.sv"
 
+(* keep_hierarchy *)
 module mutex #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

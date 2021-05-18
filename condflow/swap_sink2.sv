@@ -3,6 +3,7 @@
 `include "swap2.sv"
 `include "../active/sink.sv"
 
+(* keep_hierarchy *)
 module swap_sink2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 
@@ -19,8 +20,8 @@ module swap_sink2 #(
   input [N-1:0] d1_i,
 
   input rctl_i,
-  output actl_i,
   input dctl_i,
+  output actl_i,
 
   output r_o,
   input a_o,

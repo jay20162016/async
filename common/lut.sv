@@ -7,6 +7,7 @@
 `define IC 16'b1100_1100_1100_1100
 `define ID 16'b1010_1010_1010_1010
 
+(* keep_hierarchy *)
 module lut #(
     parameter [15:0] LUT = 16'b0,
     parameter NATIVE = 1'b1

@@ -4,6 +4,7 @@
 `include "../common/dlatch.sv"
 `include "../delay/delay.sv"
 
+(* keep_hierarchy *)
 module hlatch #(
     parameter RdataVal = 1'b0, // reset value (data)
     parameter RhandshakeVal = 1'b0, // reset value (handshake)

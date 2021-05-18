@@ -7,6 +7,7 @@
 
 `include "../flow/split.sv"
 
+(* keep_hierarchy *)
 module a_add1 #(
   parameter Rpol = 1'b0
   ) (

@@ -2,6 +2,7 @@
 
 `include "demux.sv"
 
+(* keep_hierarchy *)
 module demux2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

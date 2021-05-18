@@ -2,6 +2,7 @@
 
 `include "lut.sv"
 
+(* keep_hierarchy *)
 module dlatch #(
     parameter Rval = 1'b0, // reset value
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)

@@ -1,5 +1,6 @@
 `ifndef __sink
 
+(* keep_hierarchy *)
 module sink (
   input r_i,
   output a_o);

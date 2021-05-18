@@ -29,8 +29,7 @@
 `include "condflow/swap_sink.sv"
 `include "condflow/swap_sink2.sv"
 
-`include "arbiter/mutex.sv"
-`include "arbiter/arbiter.sv"
+`include "sync/arbiter.sv"
 
 `include "logic/and.sv"
 `include "logic/xor.sv"

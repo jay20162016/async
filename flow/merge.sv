@@ -1,5 +1,8 @@
 `ifndef __merge
 
+`include "../common/mutex.sv"
+
+(* keep_hierarchy *)
 module merge #(
     parameter N = 32'b1
   ) (
@@ -13,14 +16,24 @@ module merge #(
 
   output r_o,
   input a_o,
-  output [N-1:0] d_o);
+  output [N-1:0] d_o,
+
+  input rst);
 
   assign r_o = r_i | r1_i;
 
   assign a_i = a_o;
   assign a1_i = a_o;
 
-  assign d_o = r_i ? d_i : d1_i;
+  wire mux_select;
+
+  mutex data_mux (
+    r_i, r1_i,
+    mux_select,,
+    rst
+    );
+
+  assign d_o = mux_select ? d_i : d1_i;
 
 endmodule
 

@@ -2,6 +2,7 @@
 
 `include "delay_one.sv"
 
+(* keep_hierarchy *)
 module delay #(
     parameter T = 32'b1,
 

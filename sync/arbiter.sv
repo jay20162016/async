@@ -1,8 +1,9 @@
 `ifndef __arbiter
 
-`include "mutex.sv"
-`include "../flow/merge.sv"
+`include "../common/mutex.sv"
+`include "../flow/merge2.sv"
 
+(* keep_hierarchy *)
 module arbiter #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

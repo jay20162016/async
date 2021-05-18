@@ -3,6 +3,7 @@
 `include "merge.sv"
 `include "../common/mullerc.sv"
 
+(* keep_hierarchy *)
 module merge2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 
@@ -33,7 +34,8 @@ module merge2 #(
   merge #(.N(N)) main (
     r_i, ta_i, d_i,
     r1_i, ta1_i, d1_i,
-    r_o, a_o, d_o
+    r_o, a_o, d_o,
+    rst
     );
 
   mullerc #(.Rval(1'b0), .Rpol(Rpol), .NATIVE(NATIVE)) a0 (

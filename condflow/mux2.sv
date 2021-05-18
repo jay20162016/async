@@ -2,6 +2,7 @@
 
 `include "mux.sv"
 
+(* keep_hierarchy *)
 module mux2 #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

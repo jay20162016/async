@@ -2,6 +2,7 @@
 
 `include "../delay/delay.sv"
 
+(* keep_hierarchy *)
 module a_not #(
   parameter Rpol = 1'b0,
 

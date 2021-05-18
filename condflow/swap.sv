@@ -3,6 +3,7 @@
 `include "../flow/split.sv"
 `include "../condflow/mux.sv"
 
+(* keep_hierarchy *)
 module swap #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

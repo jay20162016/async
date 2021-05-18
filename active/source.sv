@@ -1,5 +1,6 @@
 `ifndef __source
 
+(* keep_hierarchy *)
 module source (
   output r_o,
   input a_i);

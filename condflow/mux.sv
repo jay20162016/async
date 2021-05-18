@@ -3,6 +3,7 @@
 `include "../flow/merge2.sv"
 `include "../common/mullerc.sv"
 
+(* keep_hierarchy *)
 module mux #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 

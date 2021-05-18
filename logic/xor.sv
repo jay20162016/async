@@ -3,6 +3,7 @@
 `include "../delay/delay.sv"
 `include "../flow/combine.sv"
 
+(* keep_hierarchy *)
 module a_xor #(
   parameter Rpol = 1'b0,
 

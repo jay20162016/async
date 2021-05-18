@@ -2,6 +2,7 @@
 
 `include "../common/mullerc.sv"
 
+(* keep_hierarchy *)
 module split #(
     parameter Rpol = 1'b0, // reset polarity (rst=rpol => reset)
 
