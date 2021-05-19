@@ -34,9 +34,15 @@ mux2 - Multiplexes, control is bundled-data.
 demux - Demultiplexer, control is dual-rail.  
 demux2 - Demultiplexer, control is bundled-data.   
 
-cond_sink - Conditional Sink, control is dual-rail.
-cond_sink2 - Conditional Sink, control is bundled-data.
+cond_sink - Conditional Sink, control is dual-rail.  
+cond_sink2 - Conditional Sink, control is bundled-data.  
 
-sr_latch - SR latch
-mutex - mutual exclusion element, first handshake is given priority
-arbiter - merges handshakes (no need for mutual exclusion), first handshake is given priority
+swap - Swap handshakes. Control is dual-rail.  
+swap2 - Swap handshakes. Control is bundled-data.  
+
+swap_sink - Chooses a handshake. Other one is discarded. Control is dual-rail.  
+swap_sink2 - Chooses a handshake. Other one is discarded. Control is bundled-data.  
+
+sr_latch - SR latch  
+mutex - mutual exclusion element, first handshake is given priority  
+arbiter - merges handshakes (no need for mutual exclusion), first handshake is given priority  
